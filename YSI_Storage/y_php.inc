@@ -247,7 +247,7 @@ static stock PHP_EncodeFloat(value, dest[])
 	dest[4] = (value & 0x0F | 0xC0);
 }
 
-mhook OnScriptInit()
+hook OnScriptInit()
 {
 	if (!strcmp(PHP_RECEIVE, "http://", true, 7))
 	{
